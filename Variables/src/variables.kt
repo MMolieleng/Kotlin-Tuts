@@ -2,8 +2,8 @@ import java.util.*
 
 fun main(args: Array<String>){
 
-    var name = "Username"; // Mutable
-    val surname = "Doe" // immutable
+    var name = "Username"; // Mutable String, same as var name:String = "username"
+    val surname = "Doe" // immutable String, same as var surname: String = "Doe"
 
     println(name)
     println(surname)
@@ -32,8 +32,9 @@ fun fullNames(name: String, surname: String): String{
 }
 
 /**
- *
+ * Adding integers
  */
 fun add(num1: Int, num2: Int): Int{
     return num1 + num2;
 }
+

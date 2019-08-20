@@ -5,7 +5,6 @@ fun main() {
     var names: String
     val float: Float
 
-
     var char: Char
     char = '0'
 
@@ -27,10 +26,23 @@ fun main() {
 
     println("Int to String ${intToString(int)}")
     println("Float to int ${floatToInt(float)}")
+
+    stringToNumbers("3")
 }
 
 fun intToString(int: Int): String{
     return int.toString()
+}
+
+fun stringToNumbers(string: String){
+
+    var int: Int = string.toInt() // Only works with whole number strings , ie "4" NOT "4.0"
+    var double: Double = string.toDouble()
+    var float: Float = string.toFloat()
+
+    println("String to int : $int")
+    println("String to float : $float")
+    println("String to double : $float")
 }
 
 fun floatToInt(float: Float) = float.toInt()

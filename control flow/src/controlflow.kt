@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
 
     ifStatement()
     whenStatement()
+    whileLoop()
 }
 
 fun title() {
@@ -37,11 +38,32 @@ fun whenStatement() {
     var number = Random.nextInt(1, 5)
     println("=".repeat(10).plus(" ROBOTICS ========="))
     when (number) {
-        1-> print("RED")
-        2-> print("EMBER")
-        3-> print("GREEN")
-        else->{
+        1 -> print("RED")
+        2 -> print("EMBER")
+        3 -> print("GREEN")
+        else -> {
             println("MALFUNCTIONING ROBOTS")
         }
+    }
+}
+
+fun whileLoop() {
+
+    var age = 1;
+
+    while (age < 10) {
+        println("You're young")
+        age += 10
+    }
+
+    while (age < 50)
+    {
+        println("You are not too old")
+        age+=50
+    }
+
+    while (age >= 50){
+        print("Your days are numbered :(")
+        break
     }
 }

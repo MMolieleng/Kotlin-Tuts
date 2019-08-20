@@ -16,13 +16,24 @@ fun main(args: Array<String>){
 
     val sum = add(num1, num2) // constant
     println("The sum of $num1 and $num2 is : $sum")
+
+    var costPrice = 2.00
+    var salePrice = 3.50
+    var profit = salePrice - costPrice
+
+    println("Profit is : $profit")
 }
 
-
+/**
+ * Function takes 2 parameters of type string and returns a string
+ */
 fun fullNames(name: String, surname: String): String{
     return "$name $surname"
 }
 
+/**
+ *
+ */
 fun add(num1: Int, num2: Int): Int{
     return num1 + num2;
 }

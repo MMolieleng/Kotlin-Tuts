@@ -1,9 +1,9 @@
 import java.lang.Integer.parseInt
 import kotlin.random.Random
 
-fun main(args: Array<String>) {
-    println(title())
+fun main() {
 
+    println(title())
     ifStatement()
     whenStatement()
     whileLoop()

@@ -93,6 +93,10 @@ fun forLoop(){
         print(person.plus(", \t"))
     }
 
+    println("\n\n")
+    var numbers = arrayOf("One", "Two", "Three")
+    for (number in numbers)
+        print(number.plus(", "))
 
 }
 

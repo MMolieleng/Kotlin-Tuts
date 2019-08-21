@@ -98,6 +98,10 @@ fun forLoop(){
     for (number in numbers)
         print(number.plus(", "))
 
+    print("\nDOWN TO ".plus("=".repeat(30).plus("\n")))
+    for (i in 10 downTo 0 step 2) {
+        println(i)
+    }
 }
 
 fun doWhile(){

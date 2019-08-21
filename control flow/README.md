@@ -1,7 +1,7 @@
 ###### Control Flow
 
-```
-for (int i=0; i<10; i++){
+```kotlin
+for (i in 0..10){
     println("this will not work in kotlin")
 }
 ```

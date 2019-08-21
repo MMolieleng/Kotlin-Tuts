@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
     whenStatement()
     whileLoop()
     doWhile()
+    forLoop()
 }
 
 fun title() {
@@ -61,7 +62,7 @@ fun whenStatement() {
 
 fun whileLoop() {
 
-    var age = 1;
+    var age = 1
 
     while (age < 10) {
         println("You're young")
@@ -79,6 +80,22 @@ fun whileLoop() {
     }
 }
 
+fun forLoop(){
+
+    print("=".repeat(10).plus("\n\n"))
+    for (i in 0..10){
+        print(i)
+    }
+
+    var people = Array(4) { a-> "John $a"}
+    print("\n\n")
+    for (person in people){
+        print(person.plus(", \t"))
+    }
+
+
+}
+
 fun doWhile(){
 
     var isAdmin : Boolean
@@ -87,5 +104,5 @@ fun doWhile(){
         print(count++)
         println(" I am the admin")
         isAdmin = Random.nextBoolean()
-    }while (isAdmin)
+    } while (isAdmin)
 }

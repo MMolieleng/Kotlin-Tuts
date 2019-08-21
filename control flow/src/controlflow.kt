@@ -1,3 +1,4 @@
+import java.lang.Integer.parseInt
 import kotlin.random.Random
 
 fun main(args: Array<String>) {
@@ -6,6 +7,7 @@ fun main(args: Array<String>) {
     ifStatement()
     whenStatement()
     whileLoop()
+    doWhile()
 }
 
 fun title() {
@@ -23,6 +25,13 @@ fun ifStatement() {
         println("You have won , num = $num")
     else
         println("You have lost , num = $num")
+
+    val x = if (num < 5) {
+        num * 40
+    } else {
+        num + 0
+    }
+    println("RESULT FROM X is as follows : $x")
 }
 
 fun whenStatement() {
@@ -38,9 +47,12 @@ fun whenStatement() {
     var number = Random.nextInt(1, 5)
     println("=".repeat(10).plus(" ROBOTICS ========="))
     when (number) {
-        1 -> print("RED")
-        2 -> print("EMBER")
-        3 -> print("GREEN")
+        parseInt("3") -> {
+            println("GOT IT : s encodes x")
+            println("GREEN")
+        }
+        1 -> println("RED")
+        2 -> println("EMBER")
         else -> {
             println("MALFUNCTIONING ROBOTS")
         }
@@ -56,14 +68,24 @@ fun whileLoop() {
         age += 10
     }
 
-    while (age < 50)
-    {
+    while (age < 50) {
         println("You are not too old")
-        age+=50
+        age += 50
     }
 
-    while (age >= 50){
-        print("Your days are numbered :(")
+    while (age >= 50) {
+        println("Your days are numbered :(")
         break
     }
+}
+
+fun doWhile(){
+
+    var isAdmin : Boolean
+    var count = 0
+    do {
+        print(count++)
+        println(" I am the admin")
+        isAdmin = Random.nextBoolean()
+    }while (isAdmin)
 }
